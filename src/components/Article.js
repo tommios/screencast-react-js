@@ -16,12 +16,10 @@ class Article extends PureComponent {
   // }
 
   componentWillMount() {
-    console.log("---", "component Will Mount");
+    //console.log("---", "component Will Mount");
   }
 
   componentWillReceiveProps(nextProps) {
-    //console.log("---", "component Will Receive Props");
-
     if (nextProps.defaultOpen !== this.props.defaultOpen) {
       this.setState({
         isOpen: nextProps.defaultOpen,
