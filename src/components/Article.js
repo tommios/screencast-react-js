@@ -9,15 +9,21 @@ class Article extends Component {
   }
 
   componentWillMount() {
-    console.log("---", "mounting");
+    console.log("---", "component Will Mount");
   }
 
   componentWillReceiveProps(nextProps) {
+    console.log("---", "component Will Receive Props");
+
     if (nextProps.defaultOpen !== this.props.defaultOpen) {
       this.setState({
         isOpen: nextProps.defaultOpen,
       });
     }
+  }
+
+  componentWillUpdate() {
+    console.log("---", "component Will Update");
   }
 
   render() {
