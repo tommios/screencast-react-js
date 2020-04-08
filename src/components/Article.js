@@ -7,11 +7,25 @@ class Article extends Component {
       isOpen: props.defaultOpen,
     };
   }
+
+  componentWillMount() {
+    console.log("---", "mounting");
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.defaultOpen !== this.props.defaultOpen) {
+      this.setState({
+        isOpen: nextProps.defaultOpen,
+      });
+    }
+  }
+
   render() {
     const { article } = this.props;
     const body = this.state.isOpen && (
       <section className="card-text">{article.text}</section>
     );
+
     return (
       <div className="card mx-auto" style={{ width: "80%" }}>
         <div className="card-header">
