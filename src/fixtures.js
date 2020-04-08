@@ -1,10 +1,9 @@
 export default [
   {
     id: "56c782f18990ecf954f6e027",
-    date: "2016-06-09T15:03:23.000Z",
+    date: "2020-04-08T16:00:00.000Z",
     title: "React Is Awesome!!!",
-    text:
-      "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. \n We don't make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code. Build encapsulated components that manage their own state, then compose them to make complex UIs. Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.",
+    text: "npx create-react-app my-app  ----->  cd my-app  ----->  npm start",
     comments: [
       {
         id: "qwerqwer",
